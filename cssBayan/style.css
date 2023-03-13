@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+body {
+	background-color: cornsilk;
+}
 
 .container {
     width: 50%;
@@ -60,5 +63,92 @@ h1 {
 }
 
 .accardion {
-    
+	width: 100%;
+}
+
+.accardion__item {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.accardion__item__title {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.accardion__item__title-text {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.accardion__item__title-icon {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.accardion__item input {
+	width: 100%;
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+	opacity: 0;
+}
+
+.accardion__item .accardion__item-img {
+	width: 300px;
+	/* height: 300px; */
+    background-image: url('./assets/images/brain\ of\ a\ programmers.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.accardion__item:nth-child(2) .accardion__item-img {
+	width: 300px;
+	/* height: 300px; */
+    background-image: url('./assets/images/Me\ and\ Youtube.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.accardion__item:nth-child(3) .accardion__item-img {
+	width: 300px;
+	/* height: 300px; */
+    background-image: url('./assets/images/Programmer\ while\ sleeping.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.accardion__item:nth-child(4) .accardion__item-img {
+	width: 300px;
+	/* height: 300px; */
+    background-image: url('./assets/images/Removing\ the\ Bad\ Code.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+body:hover > .accardion__item__title-text {
+	color: blue;
+}
+
+.accardion__item input:checked~div>.accardion__item__title-icon {
+	transition: all 0.2s ease-out;
+	transform: rotate(45deg);
+}
+.accardion__item input:checked+div>label.accardion__item__title-text {
+	color: blue;
+}
+
+.accardion__item input:checked~div.accardion__item-img {
+	height: 300px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,46 @@
     <title>cssBayan</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>CSS Bayan</h1>
         <hr>
         <div class="accardion">
             <div class="accardion__item">
-                <div class="accardion__item-title">Accardion Title</div>
-                <img class="accardion__item-img" src="" alt="accardion-image">
+                <input type="radio" name="accardion" id="accardion1" checked>
+                <div class="accardion__item__title">
+                    <label for="accardion1" class="accardion__item__title-text">Brain of a programmer</label>
+                    <div class="accardion__item__title-icon">+</div>
+                </div>
+                <div class="accardion__item-img"></div>
+            </div>
+            <div class="accardion__item">
+                <input type="radio" name="accardion" id="accardion2">
+                <div class="accardion__item__title">
+                    <label for="accardion2" class="accardion__item__title-text">Me and Youtube</label>
+                    <div class="accardion__item__title-icon">+</div>
+                </div>
+                <div class="accardion__item-img"></div>
+            </div>
+            <div class="accardion__item">
+                <input type="radio" name="accardion" id="accardion3">
+                <div class="accardion__item__title">
+                    <label for="accardion3" class="accardion__item__title-text">Progammer while sleeping</label>
+                    <div class="accardion__item__title-icon">+</div>
+                </div>
+                <div class="accardion__item-img"></div>
+            </div>
+            <div class="accardion__item">
+                <input type="radio" name="accardion" id="accardion4">
+                <div class="accardion__item__title">
+                    <label id="accardion4" class="accardion__item__title-text">Bug fixing</label>
+                    <div class="accardion__item__title-icon">+</div>
+                </div>
+                <div class="accardion__item-img"></div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
